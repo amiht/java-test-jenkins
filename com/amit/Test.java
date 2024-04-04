@@ -9,12 +9,10 @@ import java.util.stream.IntStream;
 public class Test {
 
     public static void main(String[] args) {
-    // input : [ -3 , 2 , -2 , 1 , -1, 3 ]
-        // Ouput : [ -1, 1 , -2 ,2 -3 ,3 ]
+
 
         List<Integer> list = Arrays.asList(-3 , 2 , -2 , 1 , -1, 3);
 
-        //Collections.sort( list, (I1, I2) -> (I1 > I2)? -1 : (I1 < I2) ?  1 : 0);
         Collections.sort(list, (a, b) -> {
             int absA = Math.abs(a);
             int absB = Math.abs(b);
@@ -27,15 +25,11 @@ public class Test {
 
         System.out.println(list);
 
-        // input : "aabbddccc"
-        //Ouptut : "abdc"
+
         String str  = "aabbddccc";
         IntStream stream = str.chars().distinct();
         stream.forEach(ch -> System.out.println((char) ch));
-
-      //  stream.forEach(System.out::println);
-
-
+        System.out.println("This program runs from GitHub using Jenkins!");
 
 
     }
