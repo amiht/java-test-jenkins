@@ -1,9 +1,8 @@
 package com.amit;
 
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.time.LocalDateTime;
+import java.util.*;
 import java.util.stream.IntStream;
 
 public class Test {
@@ -30,6 +29,7 @@ public class Test {
         IntStream stream = str.chars().distinct();
         stream.forEach(ch -> System.out.println((char) ch));
         System.out.println("This program runs from GitHub using Jenkins!");
+        System.out.println("Date : "+ LocalDateTime.now());
 
 
     }
