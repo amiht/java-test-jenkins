@@ -31,6 +31,8 @@ public class Test {
         System.out.println("This program runs from GitHub using Jenkins!");
         System.out.println("Date : "+ LocalDateTime.now());
 
+        Employee employee = new Employee("Vishwanathan");
+        employee.sayHello();
 
     }
 }
